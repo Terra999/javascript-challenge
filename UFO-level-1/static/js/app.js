@@ -8,6 +8,7 @@ var tableData = data;
 var tbody = d3.select("tbody");
 
 data.forEach(ufoData => {
+
   console.log(ufoData);
 
   var row = tbody.append("tr");
@@ -42,11 +43,12 @@ function runEnter() {
   // Get the value property of the input element
   var inputValue = inputElement.property("value");
 
-  console.log(inputValue);
-  console.log(tableData);
+  // console.log(inputElement);
+  // console.log(inputValue);
 
 var filterData = tableData.filter(tableData => tableData.datetime === inputValue);
 
 console.log(filterData);
+
 
 };
