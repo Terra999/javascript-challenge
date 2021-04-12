@@ -1,7 +1,7 @@
 console.log("app.js loaded!")
 
-// from data.js
-var tableData = data;
+// Assign the data from data.js to a descriptive variable
+var ufoData = data;
 
 // console.log(data);
 
@@ -22,7 +22,7 @@ data.forEach(ufoData => {
 });
 
 // Select the button
-var button = d3.select("#button");
+var button = d3.select("#filter-btn");
 
 // Select the form
 var form = d3.select("#form");
@@ -44,11 +44,15 @@ function runEnter() {
   var inputValue = inputElement.property("value");
 
   // console.log(inputElement);
-  // console.log(inputValue);
 
-var filterData = tableData.filter(tableData => tableData.datetime === inputValue);
+  // Filter for the date entered in the input field
 
-console.log(filterData);
+  var filterData = ufoData.filter(ufo => (ufo.datetime === inputValue));
 
+  console.log(filterData);
+
+  // var list = d3.select("tr");
+
+  // list.append("td").text(filterData);
 
 };
