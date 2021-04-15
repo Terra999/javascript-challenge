@@ -5,6 +5,6 @@ By using pure **JavaScript**, **HTML**, and **CSS**, and **D3.js**, I created 2 
 
 ![](UFO-level-1/static/images/UFO_level_1.PNG)
 
-The webpage title "UFO Finder Part II" incorporated 5 filters, allowing a person to filter by date, city, state, country, and/or shape of the UFO sighting. A snippet of the webpage is shown below.
+The webpage titled "UFO Finder Part II" incorporated 5 filters, allowing a person to filter by date, city, state, country, and/or shape of the UFO sighting. A snippet of the webpage is shown below.
 
 ![](UFO-level-2/static/images/UFO_level_2.PNG)
